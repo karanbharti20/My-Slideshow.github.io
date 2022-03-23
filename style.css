@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    text-align: center;
+    margin-top: 77px;
+    margin-bottom: 40px;
+    font-family: sans-serif;
+}
+.slideshow-area{
+    margin: auto;
+    max-width: 1190px;
+    text-align: center;
+    position: relative;
+}
+.div1,.div2,.div3{
+    height: 450px;
+    width: 100%;
+    /* background-color: khaki; */
+    border: 2px solid black;
+    margin-bottom: 10px;
+}
+.div1{
+    background-image: url('bg1.jpg');
+    background-size: cover;
+    background-position: center;
+
+}
+.div2{
+    background-image: url('bg2.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.div3{
+    background-image: url('bg3.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.left , .right{
+    cursor: pointer;
+    position: absolute;
+    width: auto;
+    top: 50%;
+    margin-top: -25px;
+    color: white;
+    padding: 18px;
+    font-size: 22px;
+    font-weight: bolder;
+    text-decoration: none;
+    
+}
+.left:hover , .right:hover{
+    background-color: rgba(0,0,0,0.7);
+    transition: 0.4s ease-in-out;
+}
+.left{
+    left: 0;
+    border-radius: 4px;
+    margin-bottom: 14px;
+    
+}
+.right{
+    right: 0;
+    border-radius: 4px;
+}
+.dot{
+    cursor: pointer;
+    height: 14px;
+    width: 14px;
+    display: inline-block;
+    border-radius: 50%;
+    margin: 0 3px;
+    background-color: gray;
+    margin-top: 17px;
+    transition: 0.3s ease;
+}
+.dot:hover , .present{
+    background-color: black;
+    
+}
+.effect{
+    -webkit-animation-name: effectt;
+    -webkit-animation-duration: 1.4s;
+    animation-name: effectt;
+    animation-duration: 1.4s;
+}
+@keyframes effectt {
+    from{opacity: 0.4;}
+    to{opacity: 1;}
+    
+}
