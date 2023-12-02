@@ -1,2 +1,2 @@
 # My-Slideshow.github.io
-This is a basic image slideshow.
+This is a basic image slideshow. (Image slider)
